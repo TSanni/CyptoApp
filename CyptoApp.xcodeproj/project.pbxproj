@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		83028A0A29C7D525002738F9 /* CyptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83028A0929C7D525002738F9 /* CyptoAppApp.swift */; };
 		83028A0C29C7D525002738F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83028A0B29C7D525002738F9 /* ContentView.swift */; };
-		83028A0E29C7D527002738F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83028A0D29C7D527002738F9 /* Assets.xcassets */; };
 		83028A1129C7D527002738F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83028A1029C7D527002738F9 /* Preview Assets.xcassets */; };
+		83028A1829C7D5E3002738F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83028A1729C7D5E3002738F9 /* Assets.xcassets */; };
+		83028A1B29C7D685002738F9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83028A1A29C7D685002738F9 /* Color.swift */; };
+		83DED27629C7F78F00E047DB /* HomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DED27529C7F78F00E047DB /* HomView.swift */; };
+		83DED27A29C7FEA100E047DB /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DED27929C7FEA100E047DB /* CircleButtonView.swift */; };
+		83DED27C29C81EAA00E047DB /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DED27B29C81EAA00E047DB /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83028A0629C7D525002738F9 /* CyptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83028A0929C7D525002738F9 /* CyptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyptoAppApp.swift; sourceTree = "<group>"; };
 		83028A0B29C7D525002738F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83028A0D29C7D527002738F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83028A1029C7D527002738F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83028A1729C7D5E3002738F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		83028A1A29C7D685002738F9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		83DED27529C7F78F00E047DB /* HomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomView.swift; sourceTree = "<group>"; };
+		83DED27929C7FEA100E047DB /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		83DED27B29C81EAA00E047DB /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				83028A0929C7D525002738F9 /* CyptoAppApp.swift */,
+				83028A1929C7D66D002738F9 /* Extensions */,
+				83DED27129C7F71C00E047DB /* Core */,
 				83028A0B29C7D525002738F9 /* ContentView.swift */,
-				83028A0D29C7D527002738F9 /* Assets.xcassets */,
+				83028A1729C7D5E3002738F9 /* Assets.xcassets */,
 				83028A0F29C7D527002738F9 /* Preview Content */,
 			);
 			path = CyptoApp;
@@ -65,6 +75,64 @@
 				83028A1029C7D527002738F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83028A1929C7D66D002738F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83028A1A29C7D685002738F9 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83DED27129C7F71C00E047DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				83DED27729C7F90000E047DB /* Components */,
+				83DED27229C7F73000E047DB /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		83DED27229C7F73000E047DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83DED27329C7F73A00E047DB /* Views */,
+				83DED27429C7F74500E047DB /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		83DED27329C7F73A00E047DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83DED27529C7F78F00E047DB /* HomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83DED27429C7F74500E047DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83DED27729C7F90000E047DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				83DED27829C7F92500E047DB /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		83DED27829C7F92500E047DB /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				83DED27929C7FEA100E047DB /* CircleButtonView.swift */,
+				83DED27B29C81EAA00E047DB /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83028A1129C7D527002738F9 /* Preview Assets.xcassets in Resources */,
-				83028A0E29C7D527002738F9 /* Assets.xcassets in Resources */,
+				83028A1829C7D5E3002738F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +207,10 @@
 			files = (
 				83028A0C29C7D525002738F9 /* ContentView.swift in Sources */,
 				83028A0A29C7D525002738F9 /* CyptoAppApp.swift in Sources */,
+				83028A1B29C7D685002738F9 /* Color.swift in Sources */,
+				83DED27A29C7FEA100E047DB /* CircleButtonView.swift in Sources */,
+				83DED27629C7F78F00E047DB /* HomView.swift in Sources */,
+				83DED27C29C81EAA00E047DB /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +342,11 @@
 				DEVELOPMENT_TEAM = QNXV57SQKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cyptoer;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +354,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sannideveloper.CyptoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +374,11 @@
 				DEVELOPMENT_TEAM = QNXV57SQKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cyptoer;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +386,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sannideveloper.CyptoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
