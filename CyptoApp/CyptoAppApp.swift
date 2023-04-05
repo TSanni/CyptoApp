@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct CyptoAppApp: App {
+    @StateObject private var vm = HomeViewModel()
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomView()
                     .navigationBarHidden(true)
             }
+            .environmentObject(vm)
         }
     }
 }
